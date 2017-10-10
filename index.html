@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Magic Hangman</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="keyUp">
+
+<!-- put image in jumbotron,  not sure how this is possible -->
+
+	<div class="container">
+		<div class="jumbotron text-center">
+			<h1>Wizard's Hangman</h1>
+			<p> Guess the spell!</p>
+
+<!-- cast spell once completed.  Animate css (animated in separate script, not sure how to reset here) -->
+
+	<div class="container">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Spell</h3>
+			</div>
+			<div class="panel-body text-center">
+				<h2 id="wordGuess">_ _ _ _ _ _</h2>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				Wrong Spells: <span id="wrongSpells"></span>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				Mana Left: <span id="manaLeft">10</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				Spells Cast: <span id="spellsCast">0</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				Spells Fizzled: <span id="spellFizzles">0</span>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+
+<script src="javascript.js"></script>
+</body>
+</html>
